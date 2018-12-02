@@ -13,7 +13,6 @@ This package use the guzzle http php library to make http request, so curl ext i
 ## Usage
 
 ```php
-
 use Iptator\Scanner;
 
 $scanner = new Scanner();
@@ -21,5 +20,13 @@ $ip = $scanner->scan('1.1.1.1');
 $ip->isp; // Cloudflare, Inc.
 $ip->countryName; // Australia
 $ip->city; // South Brisbane
-
 ```
+
+## Adapters
+
+- ipapi.co
+- ip-api.com
+
+## Test
+
+`vendor/bin/phpunit tests`
